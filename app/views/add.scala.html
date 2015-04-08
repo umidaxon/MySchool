@@ -1,0 +1,28 @@
+@()
+
+@main("Add"){
+
+    @navbar("add")
+
+    <div class="container main-content">
+        <h2 class="text-center">Add new city</h2>
+        <form class="@routes.Schools.add()" method="post">
+            <div class="form-group">
+                <label for="inp-name">ism</label>
+                <input type="text" class="form-control" id="inp-name"
+                name="ism" required="">
+            </div>
+            <div class="form-group">
+                <label for="inp-desc">familiya</label>
+                <input type="text" class="form-control" id="inp-desc"
+                name="familiya" required=""></input>
+            </div>
+            <div class="form-group">
+                <label for="inp-country">fan</label>
+                <input type="text" class="form-control" id="inp-country"
+                name="fan" required="">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+}
