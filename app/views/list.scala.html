@@ -1,0 +1,35 @@
+@(teachers: List[School])
+
+@main("Home") {
+
+    @navbar("list")
+
+    <div class="container main-content">
+
+        <h1 class="text-center">Mening maktabim.</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Ism</th>
+                    <th>Familiya</th>
+                    <th>Fan</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            @for(teacher <- teachers) {
+                <tr>
+                    <td>@teacher.ism</td>
+                    <td>@teacher.familiya</td>
+                    <td>@teacher.fan</td>
+                    <td>
+                        <a href="@routes.Schools.remove(teacher.id.get)">
+                            <button class="btn btn-danger">Delete</button>
+                        </a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+}

@@ -1,0 +1,23 @@
+@(activePage: String)
+
+<html>
+    <div>
+        <nav class="navbar " role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id=".navbar-collapse1">
+                <ul class="nav navbar-nav">
+                    <li class="@if(activePage == "Bosh sahifa") {active}"><a href="@routes.Application.index()">Bosh sahifa</a></li>
+                    <li class="@if(activePage == "Biz haqimizda") {active}"><a href="@routes.Schools.list()">Biz haqimizda</a></li>
+                    <li class="@if(activePage == "Maktab o'quvchilari") {active}"><a href="@routes.Schools.add()">Maktab o'quvchilari</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</html>

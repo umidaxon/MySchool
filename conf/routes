@@ -1,0 +1,12 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET         /                     controllers.Application.index
+GET         /teachers/new         @controllers.Schools.addform
+GET         /teachers/list        @controllers.Schools.list
+POST        /teachers/new         @controllers.Schools.add
+GET         /teachers/:id/remove  @controllers.Schools.remove(id:Int)
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file        controllers.Assets.at(path="/public", file)
