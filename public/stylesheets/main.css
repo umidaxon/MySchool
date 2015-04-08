@@ -1,0 +1,14 @@
+.navbar{
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right:100px;
+    background-color: #176b9a;
+}
+.container{
+    background-color:#9fbdff;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.navbar-inverse {
+    color: #749eff;
+}

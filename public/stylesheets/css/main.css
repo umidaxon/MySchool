@@ -1,0 +1,192 @@
+
+.margin-top {
+  padding-top: 150px;
+  background: #ac82fe;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-bottom: 1px solid #222;
+}
+.col-xs-12{
+  margin-top: 150px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.top-number{
+  color: #fff;
+}
+
+.social-share > li {
+  display: inline-block;
+}
+
+.social-share > li > a {
+  display: inline-block;
+  color: #fff;
+  background: #404040;
+  width: 25px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.social-share li a:hover {
+  background: #c52d2f;
+  color: #fff;
+  text-align: center;
+}
+
+.navbar-brand {
+  /*padding: 0;*/
+  /*margin:0;*/
+}
+
+.navbar {
+  border-radius: 2px;
+  background: #151515;
+  padding: 15px;
+  /*TODO: need to show with margin, vertical alignment, heigh*/
+}
+
+ /*.navbar-nav{*/
+  /*margin-top: 12px;*/
+ /*}*/
+
+.navbar-nav>li{
+  /*margin-left: 35px;*/
+  /*padding-bottom: 28px;*/
+}
+
+.navbar-nav > li > a {
+  /*padding: 5px 12px;*/
+  /*margin: 0;*/
+  border-radius: 3px;
+  color: #fff;
+  /*line-height: 24px;*/
+  display: inline-block;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+  background-color: #c52d2f;
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover{
+  background-color: #c52d2f;
+  color: #fff;
+}
+
+
+.dropdown-menu {
+  background-color: #101010;
+  color: #fff;
+}
+
+.dropdown-menu > li > a {
+  /*color: #fff;*/
+}
+
+
+/*.navbar-inverse .navbar-nav > .open > a,*/
+/*.navbar-inverse .navbar-nav > .open > a:hover,*/
+/*.navbar-inverse .navbar-nav > .open > a:focus*/
+
+.navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
+.navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
+  background-color: #c52d2f;
+  color: #fff;
+}
+
+#footer {
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+  background: #2e2e2e;
+}
+
+#footer a {
+  color: #fff;
+}
+
+#footer a:hover {
+  color: #c52d2f;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer ul > li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+
+.feature-wrap i {
+  font-size: 48px;
+  height: 110px;
+  width: 60px;
+  margin: 3px 3px 3px 3px;
+  /*border-radius: 100%;*/
+  /*line-height: 110px;*/
+  /*text-align: center;*/
+  /*vertical-align: middle;*/
+  /*background: rgb(255, 255, 255);*/
+  color:#c52d2f;
+  /*border: 3px solid rgb(255, 255, 255);*/
+  /*box-shadow: rgb(242, 242, 242) 0px 0px 0px 5px inset;*/
+  /*-webkit-transition: 500ms;*/
+  float: left;
+}
+
+.main-bg {
+  background: #000 url(../images/services/bg_services.png);
+  background-size: cover;
+}
+.main-content {
+ padding: 80px 0;
+}
+
+/*#blog {*/
+  /*background: url(../images/partners/partner_bg.png) no-repeat;*/
+  /*background-size: cover;*/
+/*}*/
+
+/*#blog {*/
+  /*margin: -20px 0;*/
+  /*color: #fff;*/
+  /*padding-top: 10px;*/
+  /*text-align: center;*/
+/*}*/
+
+#page-title{
+  color: #ed195a;
+  line-height: 1.125em;
+}
+
+.card-body-social {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.card-body-social .git {
+  color: black;
+  margin-left: 10px;
+}
+.card-body-social .twitter {
+  color: #19C4FF;
+  margin-left: 10px;
+}
+.card-body-social .google-plus {
+  color: #DD4B39;
+  margin-left: 10px;
+}
+.card-body-social .facebook {
+  color: #49649F;
+  margin-left: 10px;
+}
+.card-body-social .linkedin {
+  color: #007BB6;
+  margin-left: 10px;
+}
