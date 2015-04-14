@@ -1,0 +1,31 @@
+@(pupil: Pupil, classes: List[Class])
+
+@main("Edit") {
+
+    @navbar("add")
+
+    <div class="container main-content">
+        <h2 class="text-center">Edit city</h2>
+        <form class="@routes.Pupils.update(pupil.id.get)" method="post">
+            <div class="form-group">
+                <label for="inp-name">Ism</label>
+                <input type="text" class="form-control" id="inp-name"
+                name="ism" value="@pupil.ism" required="">
+            </div>
+            <div class="form-group">
+                <label for="inp-familya">Familiya</label>
+                <textarea type="text" class="form-control" id="inp-familya"
+                name="familya" required="">@pupil.familiya</textarea>
+            </div>
+            <div class="form-group">
+                <label for="inp-class">Class</label>
+                <select name="class" class="form-control" id="inp-class">
+                @for(group <- classes) {
+                    <option value="@group.id">@group.name</option>
+                }
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+}

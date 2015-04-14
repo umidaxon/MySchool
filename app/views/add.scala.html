@@ -1,12 +1,12 @@
-@()
+@(classes: List[Class])
 
 @main("Add"){
 
     @navbar("add")
 
     <div class="container main-content">
-        <h2 class="text-center">Add new city</h2>
-        <form class="@routes.Schools.add()" method="post">
+        <h2 class="text-center">Add new Pupil</h2>
+        <form class="@routes.Pupils.add()" method="post">
             <div class="form-group">
                 <label for="inp-name">ism</label>
                 <input type="text" class="form-control" id="inp-name"
@@ -17,12 +17,17 @@
                 <input type="text" class="form-control" id="inp-desc"
                 name="familiya" required="" />
             </div>
-            <div class="form-group">
-                <label for="inp-country">fan</label>
-                <input type="text" class="form-control" id="inp-country"
-                name="fan" required="">
-            </div>
+           <div class="form-group">
+               <label for="inp-class">Class</label>
+               <select name="class" class="form-control" id="inp-class">
+                   @for(c_lass <- classes){
+                       <option value="@c_lass.id">@c_lass.name</option>
+                   }
+               </select>
+           </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+
 }
+

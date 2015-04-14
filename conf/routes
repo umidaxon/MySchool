@@ -3,10 +3,19 @@
 # ~~~~
 
 # Home page
-GET         /                     controllers.Application.index
-GET         /teachers/new         @controllers.Schools.addform
-GET         /teachers/list        @controllers.Schools.list
-POST        /teachers/new         @controllers.Schools.add
-GET         /teachers/:id/remove  @controllers.Schools.remove(id:Int)
+GET         /                           controllers.Application.index
+GET         /teachers/new               @controllers.Pupils.addform
+GET         /teachers/list              @controllers.Pupils.list
+POST        /teachers/new               @controllers.Pupils.add
+GET         /teachers/:id/remove        @controllers.Pupils.remove(id:Int)
+POST        /teachers/:id/edit          @controllers.Pupils.update(id:Int)
+GET         /teachers/:id/edit          @controllers.Pupils.showEditForm(id:Int)
+
+GET         /countries/list          @controllers.Classes.list
+GET         /countries/new           @controllers.Classes.showAddForm
+POST        /countries/new           @controllers.Classes.add
+GET         /country/:id/remove      @controllers.Classes.remove(id: Int)
+POST        /country/:id/edit        @controllers.Classes.update(id: Int)
+GET         /country/:id/edit        @controllers.Classes.showEditForm(id: Int)
 # Map static resources from the /public folder to the /assets URL path
-GET         /assets/*file        controllers.Assets.at(path="/public", file)
+GET         /assets/*file               controllers.Assets.at(path="/public", file)

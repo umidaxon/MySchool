@@ -2,7 +2,7 @@
 
 <html>
     <div>
-        <nav class="navbar " role="navigation">
+        <nav class="navbar" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
                     <span class="sr-only">Toggle navigation</span>
@@ -13,9 +13,11 @@
             </div>
             <div class="collapse navbar-collapse" id=".navbar-collapse1">
                 <ul class="nav navbar-nav">
-                    <li class="@if(activePage == "Bosh sahifa") {active}"><a href="@routes.Application.index()">Bosh sahifa</a></li>
-                    <li class="@if(activePage == "Biz haqimizda") {active}"><a href="@routes.Schools.list()">Biz haqimizda</a></li>
-                    <li class="@if(activePage == "Maktab o'quvchilari") {active}"><a href="@routes.Schools.add()">Maktab o'quvchilari</a></li>
+                    <li class="@if(activePage == "home") {active}"><a href="@routes.Application.index()">Home</a></li>
+                    <li class="@if(activePage == "pupil list") {active}"><a href="@routes.Pupils.list()">Pupils list</a></li>
+                    <li class="@if(activePage == "Mak") {active}"><a href="@routes.Pupils.add()">New pupils</a></li>
+                    <li class="@if(activePage == "Maktab o'quvchilari") {active}"><a href="@routes.Classes.list()">Classes list</a></li>
+                    <li class="@if(activePage == "Maktab o'quvchilari") {active}"><a href="@routes.Classes.add()">New classes</a></li>
                 </ul>
             </div>
         </nav>

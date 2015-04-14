@@ -1,0 +1,34 @@
+@(classes: List[Class])
+
+@main("Home") {
+
+    @navbar("listSchools")
+
+    <div class="container main-content">
+
+        <h1 class="text-center">Classes</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+            @for(group <- classes) {
+                <tr>
+                    <td>@group.name</td>
+                    <td>
+                        <a href="@routes.Pupils.showEditForm(group.id.get)">
+                            <button class="btn btn-warning col-xs-offset-10">Edit</button>
+                        </a>
+                        <a href="@routes.Pupils.remove(group.id.get)">
+                            <button class="btn btn-danger">Delete</button>
+                        </a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+
+}

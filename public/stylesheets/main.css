@@ -1,14 +1,30 @@
 .navbar{
-    margin-top: 200px;
-    margin-left: 100px;
-    margin-right:100px;
-    background-color: #176b9a;
+    background-color: #b9d6fe;
 }
 .container{
-    background-color:#9fbdff;
     margin-left: 100px;
     margin-right: 100px;
 }
 .navbar-inverse {
-    color: #749eff;
+    border-radius: 0px;
+}
+.block{
+    padding-top: 20px;
+    margin-top: 80px;
+}
+.main-bg{
+    background: #000 url(../images/Opera-Background-Blue-Swirls%202.jpg);
+}
+.nav-sidebar{
+    font-size: 20px;
+}
+.top{
+    margin-top:-20px;
+}
+.nav-sidebar > li > a{
+
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover{
+    background-color: #c52d2f;
 }

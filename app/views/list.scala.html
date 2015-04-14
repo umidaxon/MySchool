@@ -1,4 +1,4 @@
-@(teachers: List[School])
+@(pupils: List[ClassPupil])
 
 @main("Home") {
 
@@ -12,18 +12,21 @@
                 <tr>
                     <th>Ism</th>
                     <th>Familiya</th>
-                    <th>Fan</th>
+                    <th>Class</th>
                     <th>Action</th>
                 </tr>
             </thead>
             <tbody>
-            @for(teacher <- teachers) {
+            @for(pupilMT <-pupils ) {
                 <tr>
-                    <td>@teacher.ism</td>
-                    <td>@teacher.familiya</td>
-                    <td>@teacher.fan</td>
+                    <td>@pupilMT.pupil.ism</td>
+                    <td>@pupilMT.pupil.familiya</td>
+                    <td>@pupilMT.className</td>
                     <td>
-                        <a href="@routes.Schools.remove(teacher.id.get)">
+                        <a href="@routes.Pupils.showEditForm(pupilMT.pupil.id.get)">
+                            <button class="btn btn-warning">Edit</button>
+                        </a>
+                        <a href="@routes.Pupils.remove(pupilMT.pupil.id.get)">
                             <button class="btn btn-danger">Delete</button>
                         </a>
                     </td>
