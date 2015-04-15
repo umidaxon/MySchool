@@ -1,7 +1,6 @@
 package models
 
 import play.api.db.slick.Config.driver.simple._
-import sun.management.snmp.jvmmib.JvmRTBootClassPathTableMeta
 
 case class Pupil(id: Option [Int],
                   ism: String,

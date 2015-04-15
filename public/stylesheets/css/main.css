@@ -40,7 +40,7 @@
 }
 
 .navbar {
-  border-radius: 2px;
+  border-radius: 0px;
   background: #151515;
   padding: 15px;
   /*TODO: need to show with margin, vertical alignment, heigh*/
@@ -71,8 +71,8 @@
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover{
-  background-color: #c52d2f;
-  color: #adbcfe;
+  background-color: #676edb;
+  color: #676edb;
 }
 
 
